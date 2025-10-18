@@ -94,7 +94,7 @@ jobs:
               make -ik distclean > /dev/null
           done
       - run: sccache -s
-      - uses: actions/upload-artifact@0b7f8abb1508181956e8e162db84b466c27e18ce
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         name: Uploading build log
         if: always()
         with:
